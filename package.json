@@ -1,0 +1,31 @@
+{
+  "name": "1gam-201701",
+  "version": "1.0.0",
+  "description": "One Game A Month January 2017 - Friends",
+  "main": "game.js",
+  "scripts": {
+    "dev": "beefy game.js --index=index.html --live",
+    "lint": "standard",
+    "validate": "npm ls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roybie/1gam-201701.git"
+  },
+  "author": "Roy Brunton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Roybie/1gam-201701/issues"
+  },
+  "homepage": "https://github.com/Roybie/1gam-201701#readme",
+  "pre-commit": [
+    "lint",
+    "validate"
+  ],
+  "devDependencies": {
+    "beefy": "^2.1.8",
+    "browserify": "^13.3.0",
+    "precommit-hook": "^3.0.0",
+    "standard": "^8.6.0"
+  }
+}

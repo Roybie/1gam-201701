@@ -1,13 +1,12 @@
-(function() {
+(function () {
+  var Phaser = window.Phaser
+  var game = new Phaser.Game(800, 600, Phaser.AUTO)
 
-    var game = new Phaser.Game(800, 600, Phaser.AUTO);
+  var loadState = require('./states/loadState.js')
+  var gameState = require('./states/gameState.js')
 
-    var load_state = require('./states/load_state.js');
-    var game_state = require('./states/game_state.js');
+  game.state.add('load', loadState)
+  game.state.add('game', gameState)
 
-    game.state.add('load', load_state);
-    game.state.add('game', game_state);
-
-    game.state.start('load');
-
-})();
+  game.state.start('load')
+})()

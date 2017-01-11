@@ -2,6 +2,6 @@
 One Game A Month January 2017 - Friends
 
 ## Dev
-`npm i -g beefy browserify`
+`npm i`
 
-`beefy game.js --index=index.html --live`
+`npm run dev`
